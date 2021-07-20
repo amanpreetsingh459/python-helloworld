@@ -1,4 +1,4 @@
-name: Docker Build and Push
+name: Docker Build and Push2
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -33,7 +33,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Build and push
+        name: Build and push2
         uses: docker/build-push-action@v2
         with:
           context: .
